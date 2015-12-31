@@ -1,5 +1,4 @@
-angular.module('userProfiles')
-.controller('mainCtrl', function( $scope, friendService, $location ) {
+angular.module('userProfiles').controller('mainCtrl', function( $scope, friendService, $location ) {
 
 	$scope.login = function( user ) {
 		friendService.login(user).then(function( response ) {
